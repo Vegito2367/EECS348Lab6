@@ -125,7 +125,6 @@ int main()
   string filename="input.txt";
   
   readFile(filename,lines);
-
   
   int size=stoi(lines[0]);
 
@@ -156,7 +155,21 @@ int main()
 
 
   std::cout<<endl;
+  cout<<"Matrix 1: "<<endl;
+  printMatrix(matrix1,size);
+  cout<<"Addition of Matrix 1 and Matrix 2: "<<endl;
+  addMatrix(matrix1,matrix2,size);
+  cout<<"Subtraction of Matrix 1 and Matrix 2: "<<endl;
+  SubtractionMatrix(matrix1,matrix2,size);
+  cout<<"Multiplication of Matrix 1 and Matrix 2: "<<endl;
+  multiplyMatrix(matrix1,matrix2,size);
+  cout<<"Transpose of Matrix 1: "<<endl;
   transposeMatrix(matrix1,size);
+  cout<<"max value of Matrix 1: "<<endl;
+  MaxValue(matrix1,size);
+  cout<<"Updating element in row 1, column 1 with new element 5 of Matrix 1: "<<endl;
+  UpdateElement(matrix1,1,1,5,size);
+
 
 
   return 0;
