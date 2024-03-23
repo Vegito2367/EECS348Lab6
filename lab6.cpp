@@ -165,8 +165,8 @@ int main()
   multiplyMatrix(matrix1,matrix2,size);
   cout<<"Transpose of Matrix 1: "<<endl;
   transposeMatrix(matrix1,size);
-  cout<<"max value of Matrix 1: "<<endl;
-  MaxValue(matrix1,size);
+  cout<<"max value of Matrix 2: "<<endl;
+  MaxValue(matrix2,size);
   cout<<"Updating element in row 1, column 1 with new element 5 of Matrix 1: "<<endl;
   UpdateElement(matrix1,1,1,5,size);
 
